@@ -4,6 +4,7 @@ import { SiteFooter } from "@/components/site-footer";
 import { Toaster } from "@/components/ui/sonner";
 
 import appCss from "@/styles/app.css?url";
+import "@/styles/app.css";
 
 function NotFoundComponent() {
   return (
