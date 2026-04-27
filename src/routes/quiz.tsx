@@ -75,7 +75,7 @@ function QuizPage() {
     const [scores, setScores] = useState({ diet: 0, cleanse: 0, hydration: 0 });
     const [done, setDone] = useState(false);
 
-    const choose = (w: Record<string, number>) => {
+    const choose = (w: any) => {
         const next = { ...scores };
         for (const [k, v] of Object.entries(w)) (next as any)[k] += v;
         setScores(next);
